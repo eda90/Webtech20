@@ -1,16 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Erster Titel</title>
+    <title>HTML-Einführung</title>
 </head>
 <body>
-<h1>Willkommen</h1>
-<p>Das ist die Datei index.html. Sie liegt bei mir
-    unter /Users/jornfreiheit/Sites/Webtech20.
-    Der Ordner /Users/jornfreiheit/Sites ist mein
-    DocumentRoot, deshalb kann ich diese Datei im Browser
-    unter localhost/Webtech20/index.html aufrufen.
-    Der Ordner Webtech20 wird von Git verwaltet. </p>
+<h1>große Überschrift</h1>
+neuer Text
+<p>ein erster Absatz</p>
+<h3>kleinere Überschrift</h3>
+<p> noch ein Absatz</p>
+
+Vorteile von HTML:
+<ul>
+    <li>Syntax und Semantic frei definierbar   </li>
+    <li>von Menschen lesbar</li>
+    <li>in Programmiersprachen einbettbar</li>
+    <li>offen für zukünftige Entwicklungen</li>
+</ul>
+
+<!-- das ist ein Kommentar -->
+<p>das ist ein längerer Absatz <br/>
+    das ist Text auf der nächsten Zeile </p>
+
+<img src="./images/fiw.jpg" alt="FIW-Logo" style="width: 200px;" title="Mouseover-Effekt Informatione, die erscheinen, wenn wir mit der Maus drüber fahren"/>
+
+<h3>Input-Elemente</h3>
+
+<input type="text" />
+<input type="radio" />
+<input type="checkbox" checked="checked" />
+<input type="datetime-local" />
+
+<h3>Hyperlinks</h3>
+
+das ist Text <a href="http://www.htw-berlin.de" target="_blank">
+    <img src="./images/htw.jpg" alt="HTW Logo" />
+</a> das ist weiterer Text
+<p>
+    <a href="./Unter/dok1.html">Dok 1</a>
+</p>
+
+<h3>Container</h3>
+
+<section>
+    <header>ein Absatz</header>
+    <article>noch ein Absatz</article>
+    <footer>noch ein Absatz</footer>
+</section>
+<div>
+    <p>ein Absatz</p>
+    <p>noch ein Absatz</p>
+    <p>noch ein Absatz</p>
+</div>
+
+<h3>Formulare</h3>
+
+<form method="post">
+    <input type="text" name="user" placeholder="user"/>
+    <input type="password" name="pwd"/>
+    <button type="submit">Login</button>
+</form>
+
+<ul>
+    <li><a href="http://freiheit.f4.htw-berlin.de/webtech/html/#http-anfragemethoden" target="_blank">HTTP-Anfragemethoden</a> </li>
+    <li><a href="http://freiheit.f4.htw-berlin.de/webtech/html/#http-statusmeldungen" target="_blank">HTTP-Statusmeldungen</a> </li>
+    <li><a href="http://freiheit.f4.htw-berlin.de/webtech/html/#urls" target="_blank">URLs</a> </li>
+    <li><a href="http://freiheit.f4.htw-berlin.de/webtech/html/#domain-name-service-dns" target="_blank">Domain Name Service (DNS)</a> </li>
+</ul>
 </body>
 </html>

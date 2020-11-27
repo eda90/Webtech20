@@ -2,9 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Gewichtung der Selektoren</title>
+    <style>
+        a:link { /* B=0  C=1 D=1 */
+            color: blue;
+        }
+        li a {  /* B=0 C=0 D=2 */
+            color: magenta;
+        }
+        #navigation a.link { /* B=1 C=1 D=1 */
+            color: red;
+        }
+        #navigation li a { /* B=1 C=0 D=2 */
+            color: black;
+        }
+    </style>
 </head>
 <body>
-$END$
+<ul id="navigation">
+    <li><a href="startseite.html" class="link">Startseite</a></li>
+    <li><a href="unterseite.html" class="link">Unterseite</a></li>
+    <li> Kategorie A: style-Attribut im html-Element (Beispiel 0)</li>
+    <li> Kategorie B: für id</li>
+    <li> Kategorie C: Anzahl Klassen und Pseudoklassen</li>
+    <li> Kategorie D: Anzahl der Elemente und Pseudoelemente</li>
+</ul>
 </body>
 </html>

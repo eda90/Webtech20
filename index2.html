@@ -2,9 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>CSS</title>
+    <!-- 1. externe CSS-Datei -->
+    <link rel="stylesheet" href="./styles/mystyles.css">
+    <!-- 2. style-Element -->
+    <style>
+        h1 {
+            font-weight: normal;
+            color: red;
+        }
+
+        div > ul {
+            color: grey;
+        }
+
+        li {
+            display: inline;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        span {
+            display: block;
+            color: red;
+        }
+
+    </style>
 </head>
 <body>
-$END$
+<h1>Cascading Style Sheets (CSS)</h1>
+<div>living standard - weiterentwickelt von W3C. <span>Seit 2000 CSS3.</span>
+    Wichtig: Trennung zwischen Inhalten (HTML) und Aussehen (CSS).
+</div>
+<div> Wofür CSS?
+    <section>
+        <ul class="orangeBackground blackColor">
+            <li>ansprechender Stil (Font, Farben, Schriftgröße, Rahmen, ...)
+                <a href="index.html">Link 2</a>
+            </li>
+            <li>Layout (2-spaltig, 3-spaltig, Kopf- und Fußzeilen, ...)
+                <a href="index.html">Link 3</a>
+            </li>
+            <li>responsives Webdesign (unterschiedlich für Mobile, Tablets, Desktop, ...)
+                <a href="index.html">Link 4</a>
+            </li>
+        </ul>
+    </section>
+</div>
+<ul class="orangeBackground">Inhalte heute:
+    <li>Orte für CSS-Definitionen
+        <a href="Unter/dok1.html">Link 5</a>
+    </li>
+    <li>Selektoren
+        <a href="Unter/dok1.html">Link 6</a>
+    </li>
+    <li>Box Model
+        <a href="Unter/dok1.html">Link 7</a>
+    </li>
+    <li>Layout (Prinzip, float)
+        <a href="Unter/dok1.html">Link 8</a>
+    </li>
+    <li>Gewichtung der Selektoren
+        <a href="Unter/dok1.html">Link 9</a>
+    </li>
+</ul>
 </body>
-</html>
+</html>html>
